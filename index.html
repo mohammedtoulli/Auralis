@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Auralis - Un souffle vert pour votre santé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .navbar {
+                padding: 1rem 0;
+            }
+            
+            .navbar-brand img {
+                height: 90px;
+                width: auto;
+            }
+    
+            .navbar-toggler {
+                border: none;
+                padding: 0.5rem;
+            }
+    
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+    
+            .navbar-toggler-icon {
+                background-image: none;
+                position: relative;
+                width: 24px;
+                height: 2px;
+                background-color: #28C195;
+                display: inline-block;
+                vertical-align: middle;
+                transition: all 0.3s;
+            }
+    
+            .navbar-toggler-icon:before,
+            .navbar-toggler-icon:after {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                background-color: #28C195;
+                left: 0;
+                transition: all 0.3s;
+            }
+    
+            .navbar-toggler-icon:before {
+                top: -8px;
+            }
+    
+            .navbar-toggler-icon:after {
+                bottom: -8px;
+            }
+    
+            .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+                background-color: transparent;
+            }
+    
+            .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+    
+            .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+                transform: rotate(-45deg);
+                bottom: 0;
+            }
+    
+            .nav-link {
+                color: #333;
+                font-weight: 500;
+                padding: 0.5rem 1rem;
+                transition: all 0.3s;
+            }
+    
+            .nav-link:hover {
+                color: #28C195;
+            }
+    
+            .btn-outline-secondary {
+                border-color: #28C195;
+                color: #28C195;
+            }
+    
+            .btn-outline-secondary:hover {
+                background-color: #28C195;
+                color: white;
+            }
+    
+            @media (max-width: 991px) {
+                .navbar-collapse {
+                    background: white;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                    margin-top: 1rem;
+                }
+    
+                .navbar-nav {
+                    gap: 0.5rem;
+                }
+    
+                .nav-item {
+                    border-bottom: 1px solid rgba(0,0,0,0.1);
+                    padding: 0.5rem 0;
+                }
+    
+                .nav-item:last-child {
+                    border-bottom: none;
+                }
+    
+                .btn-outline-secondary {
+                    width: 100%;
+                    margin: 0.5rem 0 0 0 !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image/icon.jpeg" alt="Auralis Logo" class="me-2">
+                <span class="fw-bold"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="patient-info.html">Rendez-vous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="find-hospital-link">Hôpital à proximité</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary ms-2" href="login.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+    </body>
+    </html>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-text-wrapper">
+                        <div class="badge-wrapper">
+                            <span class="badge">Nouveau</span>
+                            <span class="badge">Innovation</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Un souffle vert
+                            <span class="highlight">pour votre santé</span>
+                        </h1>
+                        <p class="hero-subtitle">Application de santé pour les personnes âgées</p>
+                        <div class="hero-buttons">
+                            <a href="patient-info.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calendar-check me-2"></i>Rendez-vous
+                                <span class="btn-shine"></span>
+                            </a>
+                            <a href="#" class="btn btn-outline btn-lg" id="find-hospital-btn">
+                                <i class="fas fa-hospital me-2"></i>Hôpital à proximité
+                                <span class="btn-shine"></span>
+                            </a>
+                            <a href="#" class="btn btn-light btn-lg">
+                                <i class="fas fa-chart-line me-2"></i>Analyse
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Utilisateurs</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Support</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <div class="image-wrapper">
+                        <img src="image/hero.png" alt="Device" class="floating">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                        <div class="shape shape-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5 features-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-badge">Fonctionnalités</span>
+                <h2 class="section-title">Nos Services</h2>
+                <p class="section-subtitle">Découvrez comment Auralis peut améliorer votre quotidien</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon-wrapper">
+                            <img src="https://www.npishost.com/Runteach/images/feature-1.png" alt="Surveillance" class="feature-img">
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="card-title">Surveillance de la santé</h5>
+                            <p class="card-text">Surveille la tension, la glycémie, rappelle la prise de médicaments</p>
+                            <div class="feature-hover-content">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Surveillance en temps réel</li>
+                                    <li><i class="fas fa-check"></i> Alertes personnalisées</li>
+                                    <li><i class="fas fa-check"></i> Historique détaillé</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-shine"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon-wrapper">
+                            <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/2724617-icone-isole-trousse-medicale-medicaments-gratuit-vectoriel.jpg" alt="Portable" class="feature-img">
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="card-title">Portable</h5>
+                            <p class="card-text">Petit module détachable à emporter partout</p>
+                            <div class="feature-hover-content">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Design compact</li>
+                                    <li><i class="fas fa-check"></i> Batterie longue durée</li>
+                                    <li><i class="fas fa-check"></i> Connexion sans fil</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-shine"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon-wrapper">
+                            <img src="https://i.pinimg.com/736x/ac/99/c6/ac99c6c1ed50c9c88961e6094ca9be9a.jpg" alt="Autonomie" class="feature-img">
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="card-title">Autonomie</h5>
+                            <p class="card-text">Favorise l'autonomie et la sérénité au quotidien</p>
+                            <div class="feature-hover-content">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Interface intuitive</li>
+                                    <li><i class="fas fa-check"></i> Assistance vocale</li>
+                                    <li><i class="fas fa-check"></i> Mode hors ligne</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-shine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Localisation Section -->
+    <section class="py-5 about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-card">
+                        <div class="about-header text-center">
+                            <div class="logo-wrapper">
+                                <img src="blob:https://web.whatsapp.com/4749b6ba-b365-49c3-968c-8d94fa729dd7" alt="Auralis Logo" class="about-logo">
+                            </div>
+                            <h2 class="about-title">Auralis, un souffle vert pour votre santé</h2>
+                            <p class="about-subtitle">L'application de santé qui veille sur vous et favorise votre autonomie, chaque jour.</p>
+                        </div>
+                        
+                        <!-- Features Grid -->
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Surveillance</h4>
+                                    <p>Tension & Glycémie</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-pills"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Médicaments</h4>
+                                    <p>Rappel intelligent</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Portable</h4>
+                                    <p>Module détachable</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Hôpitaux</h4>
+                                    <p>Accès rapide</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="about-content">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="content-card">
+                                        <h3>Notre Mission</h3>
+                                        <p>Auralis vous aide à surveiller votre santé, à gérer vos rappels de médicaments, à rester autonome grâce à un module portable, et à trouver rapidement les hôpitaux à proximité. Notre mission est de vous accompagner chaque jour pour une vie plus sereine et en meilleure santé.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="content-card">
+                                        <h3>Localisation Intelligente</h3>
+                                        <p>Grâce à la localisation intégrée, trouvez facilement les établissements de santé autour de vous et accédez à l'aide dont vous avez besoin, où que vous soyez. Notre système vous guide vers les services médicaux les plus proches en temps réel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefits Section -->
+                        <div class="benefits-section">
+                            <h3>Pourquoi Choisir Auralis ?</h3>
+                            <div class="benefits-grid">
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Interface intuitive</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Support 24/7</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Mises à jour régulières</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Section -->
+                        <div class="map-container">
+                            <iframe         src="https://www.google.com/maps?q=Av.+Abou+Bakr+el+Kadiri&output=embed" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom py-5 mt-0" style="background:#fff; color:#28C195; border-radius:2rem 2rem 0 0; box-shadow:0 -2px 16px rgba(40,193,149,0.10);">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <!-- Social Icons -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start gap-3">
+                <a href="#" class="footer-icon" title="Facebook" style="display:inline-block;"><img src="https://img.icons8.com/ios-filled/28/28C195/facebook-new.png" alt="Facebook" style="background:#e6f8f3; border-radius:50%; padding:6px;"></a>
+                <a href="#" class="footer-icon" title="Instagram" style="display:inline-block;"><img src="https://img.icons8.com/ios-filled/28/28C195/instagram-new.png" alt="Instagram" style="background:#e6f8f3; border-radius:50%; padding:6px;"></a>
+                <a href="#" class="footer-icon" title="Twitter" style="display:inline-block;"><img src="https://img.icons8.com/ios-filled/28/28C195/twitterx--v2.png" alt="Twitter" style="background:#e6f8f3; border-radius:50%; padding:6px;"></a>
+            </div>
+            <!-- Center: Logo, Name, Text -->
+            <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                <img src="image/icon.jpeg" alt="Auralis Logo" style="width:60px; border-radius:1rem; box-shadow:0 2px 8px rgba(40,193,149,0.10);">
+                <div class="fw-bold mt-2 mb-1" style="font-size:1.3rem; letter-spacing:1px; color:#28C195;">Auralis</div>
+                <div class="mb-2" style="font-size:1.05rem; color:#444;">
+                    Application de santé pour les personnes âgées, favorisant l'autonomie et le bien-être au quotidien.
+                </div>
+                <div style="font-size:1.05rem; color:#209e7a;">&copy; 2024 Auralis. Tous droits réservés.</div>
+            </div>
+            <!-- Localisation Map -->
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                <div style="width:140px; border-radius:1rem; overflow:hidden; box-shadow:0 2px 8px rgba(40,193,149,0.10);">
+                    <iframe         src="https://www.google.com/maps?q=Av.+Abou+Bakr+el+Kadiri&output=embed" 
+                    width="100%" height="90" style="border:0; border-radius:1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    function findNearestHospital() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var lat = position.coords.latitude;
+                var lon = position.coords.longitude;
+                var url = `https://www.google.com/maps/search/hôpital/@${lat},${lon},15z`;
+                window.open(url, '_blank');
+            }, function(error) {
+                alert("Impossible d'obtenir votre position. Veuillez autoriser l'accès à la localisation.");
+            });
+        } else {
+            alert("La géolocalisation n'est pas supportée par votre navigateur.");
+        }
+    }
+
+    document.getElementById('find-hospital-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        findNearestHospital();
+    });
+
+    var navLink = document.getElementById('find-hospital-link');
+    if (navLink) {
+        navLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            findNearestHospital();
+        });
+    }
+    </script>
+
+    <style>
+        .about-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 0;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-header {
+            margin-bottom: 40px;
+        }
+
+        .logo-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: rgba(40,193,149,0.1);
+            border-radius: 50%;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-wrapper:hover {
+            transform: scale(1.05);
+        }
+
+        .about-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .about-title {
+            color: #28C195;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .about-subtitle {
+            color: #209e7a;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .feature-item {
+            background: rgba(40,193,149,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            background: rgba(40,193,149,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #28C195;
+            margin-bottom: 15px;
+        }
+
+        .feature-content h4 {
+            color: #28C195;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .feature-content p {
+            color: #666;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .content-card {
+            background: rgba(40,193,149,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            background: rgba(40,193,149,0.1);
+        }
+
+        .content-card h3 {
+            color: #28C195;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .content-card p {
+            color: #444;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .benefits-section {
+            background: rgba(40,193,149,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .benefits-section h3 {
+            color: #28C195;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #444;
+        }
+
+        .benefit-item i {
+            color: #28C195;
+        }
+
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .about-card {
+                padding: 20px;
+            }
+
+            .about-title {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 100px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .badge-wrapper {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background: rgba(40, 193, 149, 0.1);
+            color: #28C195;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text-wrapper {
+            max-width: 540px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-title .highlight {
+            color: #28C195;
+            display: block;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+
+        .hero-title .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #28C195;
+            animation: lineGrow 1s ease-out forwards 0.8s;
+        }
+
+        @keyframes lineGrow {
+            to { width: 100%; }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #6c757d;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .btn:hover .btn-shine {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: #28C195;
+            border: none;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #209e7a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(40, 193, 149, 0.3);
+        }
+
+        .btn-outline {
+            border: 2px solid #28C195;
+            color: #28C195;
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: #28C195;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(40, 193, 149, 0.2);
+        }
+
+        .btn-light {
+            background: white;
+            color: #2c3e50;
+            border: none;
+        }
+
+        .btn-light:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+            animation: fadeInUp 0.8s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #28C195;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-wrapper {
+            position: relative;
+            padding: 2rem;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(40, 193, 149, 0.1);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            top: -50px;
+            right: -50px;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            bottom: 50px;
+            left: -30px;
+            animation-delay: 1s;
+        }
+
+        .shape-3 {
+            width: 150px;
+            height: 150px;
+            bottom: -30px;
+            right: 50px;
+            animation-delay: 2s;
+        }
+
+        .shape-4 {
+            width: 100px;
+            height: 100px;
+            top: 50%;
+            left: 20%;
+            animation-delay: 1.5s;
+        }
+
+        .shape-5 {
+            width: 80px;
+            height: 80px;
+            top: 30%;
+            right: 30%;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+            50% { transform: scale(1.1) rotate(180deg); opacity: 0.8; }
+            100% { transform: scale(1) rotate(360deg); opacity: 0.5; }
+        }
+
+        .hero-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            line-height: 0;
+        }
+
+        .hero-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero-section {
+                padding: 60px 0 0;
+                text-align: center;
+            }
+
+            .hero-text-wrapper {
+                margin: 0 auto 3rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .image-wrapper {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .features-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: rgba(40,193,149,0.1);
+            color: #28C195;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-header {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            color: #28C195;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #28C195;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            color: #6c757d;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 1.5rem auto 0;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(40,193,149,0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(40,193,149,0.1);
+            border-color: rgba(40,193,149,0.3);
+        }
+        
+        .feature-icon-wrapper {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+
+
+        .feature-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .feature-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-title {
+            color: #28C195;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .card-text {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #6c757d;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .feature-list li i {
+            color: #28C195;
+            font-size: 1rem;
+        }
+
+        .feature-link {
+            color: #28C195;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 1px solid #28C195;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .feature-link:hover {
+            background: #28C195;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .feature-icon-wrapper {
+                width: 80px;
+                height: 80px;
+                padding: 15px;
+            }
+        }
+    </style>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
